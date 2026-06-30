@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "exportedByEditorVersion": "2026.05.28",
+  "id": "purplier",
+  "displayName": "Purplier",
+  "colors": {
+    "background": "#FF0A0A29",
+    "onBackground": "#FFC4C2CC",
+    "surface": "#FF160C38",
+    "onSurface": "#FFF3F2F8",
+    "surfaceVariant": "#FF241F40",
+    "scrim": "#CC000000",
+    "accent": "#D79D8AFF",
+    "onAccent": "#FF1B1254",
+    "buttonNormal": "#482A2540",
+    "buttonFocused": "#A31B1254",
+    "buttonDisabled": "#4F1A1730",
+    "buttonActive": "#AE7C3AED",
+    "onButtonNormal": "#7CA8A8A8",
+    "onButtonFocused": "#CAEDEDED",
+    "onButtonDisabled": "#C0666666",
+    "inputBackground": "#B2161228",
+    "inputFocused": "#B2221C3A",
+    "inputBorder": "#A61E1A30",
+    "inputBorderFocused": "#947C3AED",
+    "rangeTrack": "#21353048",
+    "rangeProgress": "#FF715F91",
+    "rangeThumb": "#FF5B4EB1",
+    "seekbarBuffered": "#80FFFFFF",
+    "badgeBackground": "#997A40DD",
+    "onBadge": "#FFFFFFFF",
+    "badgeUnplayed": "#64BDA7E2",
+    "badgeWatched": "#8922C55E",
+    "recordingActive": "#9AEF4444",
+    "recordingScheduled": "#95FF9800"
+  },
+  "borders": {
+    "cardBorder": {
+      "color": "#0F9D8AFF",
+      "width": 1
+    },
+    "chipBorder": {
+      "color": "#5C9D8AFF",
+      "width": 1
+    },
+    "focusBorder": {
+      "color": "#9A8439AC",
+      "width": 2
+    },
+    "cardRadius": 15,
+    "chipRadius": 999,
+    "chipBackground": "#1F9D8AFF",
+    "focusGlow": [
+      {
+        "color": "#86794CCD",
+        "blurRadius": 8,
+        "spreadRadius": 1,
+        "offsetX": 0,
+        "offsetY": 0
+      }
+    ]
+  },
+  "semantic": {
+    "statusAvailable": "#CB22C55E",
+    "statusRequested": "#CC9333EA",
+    "statusPending": "#CCEAB308",
+    "statusDownloading": "#CD6366F1",
+    "mediaTypeBadgeMovie": "#CC3B82F6",
+    "mediaTypeBadgeShow": "#CD8B5CF6"
+  },
+  "book": {
+    "background": "#FF0C0A26",
+    "accent": "#FF9D8AFF",
+    "mutedText": "#FFB0A6C8",
+    "primaryText": "#FFF3F2F8",
+    "sectionTitle": "#FFCBB8F5",
+    "divider": "#223E3560",
+    "placeholder": "#FF6A5AB5",
+    "shadow": "#24000000",
+    "gradientTop": "#FF1A1142",
+    "gradientBottom": "#FF0C0A26",
+    "inactiveChip": "#556357A0",
+    "placeholderPalette": [
+      "#FF4A2C8F",
+      "#FF6A1B9A",
+      "#FF3B2D7A",
+      "#FF7C3AED",
+      "#FF5B4EB1",
+      "#FF8E44AD",
+      "#FF4527A0",
+      "#FF2E1A6B",
+      "#FF9D5BD6",
+      "#FF6336B0"
+    ]
+  },
+  "description": "A purplier purple, for purpliurs.",
+  "navColorCycle": [
+    "#FF9D8AFF",
+    "#FFC4B5FD"
+  ]
+}
