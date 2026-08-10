@@ -26,6 +26,11 @@
       "id": "redflix",
       "displayName": "Redflix",
       "file": "themes/redflix.theme.json"
-    }
+    },
+    {
+      "id": "darkflix",
+      "displayName": "DarkFlix",
+      "file": "themes/darkflix.json"
+    },
   ]
 }
