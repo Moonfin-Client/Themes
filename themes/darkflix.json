@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "exportedByEditorVersion": "2026.05.28",
+  "id": "darkflix",
+  "displayName": "darkflix",
+  "colors": {
+    "background": "#FF000000",
+    "onBackground": "#FFFFFFFF",
+    "surface": "#FF000000",
+    "onSurface": "#FFFFFFFF",
+    "surfaceVariant": "#FF000000",
+    "scrim": "#CC000000",
+    "accent": "#FFA40000",
+    "onAccent": "#FFFFFFFF",
+    "buttonNormal": "#FF2A2A2A",
+    "buttonFocused": "#FFA40000",
+    "buttonDisabled": "#FF1E1E1E",
+    "buttonActive": "#FF3A3A3A",
+    "onButtonNormal": "#FFFFFFFF",
+    "onButtonFocused": "#FFFFFFFF",
+    "onButtonDisabled": "#FFA40000",
+    "inputBackground": "#FF2A2A2A",
+    "inputFocused": "#FF3A3A3A",
+    "inputBorder": "#FFA40000",
+    "inputBorderFocused": "#FFA40000",
+    "rangeTrack": "#FF404040",
+    "rangeProgress": "#FFA40000",
+    "rangeThumb": "#FFA40000",
+    "seekbarBuffered": "#80FFFFFF",
+    "badgeBackground": "#FFA40000",
+    "onBadge": "#FFFFFFFF",
+    "badgeUnplayed": "#FFA40000",
+    "badgeWatched": "#FF4CAF50",
+    "recordingActive": "#FFEF4444",
+    "recordingScheduled": "#FFFF9800"
+  },
+  "borders": {
+    "cardBorder": {
+      "color": "#00A40000",
+      "width": 1
+    },
+    "chipBorder": {
+      "color": "#55A40000",
+      "width": 1
+    },
+    "focusBorder": {
+      "color": "#FFA40000",
+      "width": 2
+    },
+    "cardRadius": 8,
+    "chipRadius": 999,
+    "chipBackground": "#1F8EC8F0",
+    "focusGlow": []
+  },
+  "semantic": {
+    "statusAvailable": "#FF22C55E",
+    "statusRequested": "#FF9333EA",
+    "statusPending": "#FFEAB308",
+    "statusDownloading": "#FF6366F1",
+    "mediaTypeBadgeMovie": "#FF3B82F6",
+    "mediaTypeBadgeShow": "#FF8B5CF6"
+  },
+  "book": {
+    "background": "#FF790000",
+    "accent": "#FFA40000",
+    "mutedText": "#FF9EDBFF",
+    "primaryText": "#FFDCEFFF",
+    "sectionTitle": "#FFFFE6C3",
+    "divider": "#223E5F82",
+    "placeholder": "#FFD50000",
+    "shadow": "#24000000",
+    "gradientTop": "#FFA40000",
+    "gradientBottom": "#FF790000",
+    "inactiveChip": "#556388A8",
+    "placeholderPalette": [
+      "#FF1A5C9A",
+      "#FF2E7D32",
+      "#FF6A1B9A",
+      "#FF00695C",
+      "#FFC62828",
+      "#FF4527A0",
+      "#FF558B2F",
+      "#FF283593",
+      "#FF4E342E",
+      "#FF00838F"
+    ]
+  },
+  "description": "a netflix style theme"
+}
