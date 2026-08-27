@@ -177,6 +177,7 @@ function main() {
 
     if (isObj(theme) && typeof theme.id === 'string' && theme.id.trim()) {
       const id = theme.id.trim();
+      if (file !== `${id}.theme.json`) errors.push(`file must be named "${id}.theme.json" to match its id`);
       if (seenIds.has(id)) errors.push(`duplicate id "${id}" (also in ${seenIds.get(id)})`);
       else seenIds.set(id, file);
     }

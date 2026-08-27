@@ -7,6 +7,12 @@
       "file": "themes/bluesneyplus.theme.json"
     },
     {
+      "id": "darkflix",
+      "displayName": "darkflix",
+      "description": "a netflix style theme",
+      "file": "themes/darkflix.theme.json"
+    },
+    {
       "id": "greenlu",
       "displayName": "Greenlu",
       "file": "themes/greenlu.theme.json"
