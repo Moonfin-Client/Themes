@@ -15,14 +15,14 @@ Themes are plain JSON files built with the Moonfin theme editor, so you don't ne
 
 The Theme Store is a browser built into each Moonfin client. It fetches the catalog manifest, shows you the available themes, and when one is chosen, it downloads the theme, validates it, and registers it locally. Saved store themes are kept separate from server pushed themes, so syncing with your server never removes them.
 
-The catalog stays current on its own. When a new theme is merged, a GitHub Action regenerates `index.json`, so nobody has to edit the manifest by hand.
+The catalog manifest ships with the theme. `index.json` is generated from the files in `themes/`, and every pull request carries the regenerated manifest, so `main` is always ready to serve.
 
 ## Contributing a theme
 
 1. Build your theme in the Moonfin theme editor inside of the Moonfin Web client and use **Export JSON**.
 2. Add the file as `themes/<your-id>.theme.json`. The `id` inside the file must use lowercase letters, numbers, `_`, or `-`, and it has to be unique across the catalog.
-3. Open a pull request. The **Validate themes** check runs automatically and confirms every required field is present and well formed (id, displayName, all color tokens as hex, borders, and so on). If anything is wrong it tells you the file and the field to fix.
-4. Once your pull request is merged into `main`, `index.json` is regenerated for you.
+3. Regenerate the catalog and include it in the same commit. Run `node scripts/generate-index.mjs` from the repository root to rewrite `index.json`. Without Node on hand, skip this and open the pull request anyway, and the check in step 4 prints the file for you to paste in.
+4. Open a pull request. The **Validate themes** check runs automatically. It confirms every required field is present and well formed (id, displayName, all color tokens as hex, borders, and so on), and that `index.json` matches `themes/`. If anything is wrong it names the file and the field to fix, and a stale manifest comes with the expected `index.json` printed in the job summary.
 
 ## Repository layout
 
@@ -30,6 +30,6 @@ The catalog stays current on its own. When a new theme is merged, a GitHub Actio
 - `index.json` is the generated catalog: `{ schemaVersion, themes: [{ id, displayName, description, file }] }`.
 - `scripts/validate-themes.mjs` is the required-field validator, kept in step with the clients' own parsers.
 - `scripts/generate-index.mjs` rebuilds `index.json` from the contents of `themes/`.
-- `.github/workflows/` holds `validate-pr` (the pull request gate) and `build-index` (regenerates the manifest on `main`).
+- `.github/workflows/validate.yml` is the gate. It runs on pull requests and on pushes to `main`, and it fails if a theme is malformed or `index.json` no longer matches `themes/`.
 
 Clients fetch the raw files directly from `https://raw.githubusercontent.com/Moonfin-Client/Themes/main/`.

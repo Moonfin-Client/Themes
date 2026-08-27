@@ -18,9 +18,15 @@
       "file": "themes/midnight.theme.json"
     },
     {
-      "id": "pruplemax",
+      "id": "purplemax",
       "displayName": "Purple Max",
-      "file": "themes/pruplemax.theme.json"
+      "file": "themes/purplemax.theme.json"
+    },
+    {
+      "id": "purplier",
+      "displayName": "Purplier",
+      "description": "A purplier purple, for purpliurs.",
+      "file": "themes/purplier.theme.json"
     },
     {
       "id": "redflix",
