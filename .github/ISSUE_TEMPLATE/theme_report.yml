@@ -1,0 +1,53 @@
+name: Problem with a theme
+description: A theme in the catalog looks wrong or won't load
+title: "[Theme] "
+labels: ["Bug"]
+body:
+  - type: input
+    id: theme
+    attributes:
+      label: Theme
+      description: The name or id of the theme, as shown in the Theme Store.
+      placeholder: midnight
+    validations:
+      required: true
+
+  - type: dropdown
+    id: client
+    attributes:
+      label: Client
+      description: Where did you see this?
+      multiple: true
+      options:
+        - Moonfin app (mobile, desktop, TV)
+        - Smart TV (webOS / Tizen)
+        - Roku
+        - Web
+        - All clients
+    validations:
+      required: true
+
+  - type: textarea
+    id: what
+    attributes:
+      label: What is wrong?
+      description: Describe what the theme does versus what you expected.
+      placeholder: The focused button is unreadable because...
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot
+      description: A screenshot of the theme applied makes this far quicker to fix.
+    validations:
+      required: true
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Additional context
+      description: Client version, server version, anything else worth knowing.
+    validations:
+      required: false

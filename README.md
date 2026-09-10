@@ -25,8 +25,8 @@ The Theme Store is a browser built into each Moonfin client. It fetches the cata
 <summary><b>Advanced:</b> ids, the catalog manifest, and validation</summary>
 
 - The `id` inside the file must use lowercase letters, numbers, `_`, or `-`, and it has to be unique across the catalog.
-- `index.json` is generated from the files in `themes/`, and every pull request carries the regenerated manifest, so `main` is always ready to serve. Run `node scripts/generate-index.mjs` from the repository root to rewrite it, and include it in the same commit. Without Node on hand, skip this and open the pull request anyway. The check prints the expected `index.json` in the job summary for you to paste in.
-- The validator confirms every required field is present and well formed (id, displayName, all color tokens as hex, borders, and so on), and that `index.json` matches `themes/`. If anything is wrong, it names the file and the field to fix.
+- `index.json` is generated from the files in `themes/`, and every pull request carries the regenerated manifest, so `main` is always ready to serve. Run `node scripts/generate-index.mjs` from the repository root to rewrite it, and include it in the same commit. Without Node on hand, skip this and open the pull request anyway. The check comments the expected `index.json` on the pull request for you to paste in.
+- The validator confirms every required field is present and well formed (id, displayName, all color tokens as hex, borders, and so on), and that the optional fields a theme may carry, such as `isGlass` or `colors.error`, are the right type. It also confirms `index.json` matches `themes/`. If anything is wrong, it names the file and the field to fix.
 
 </details>
 
@@ -37,5 +37,6 @@ The Theme Store is a browser built into each Moonfin client. It fetches the cata
 - `scripts/validate-themes.mjs` is the required-field validator, kept in step with the clients' own parsers.
 - `scripts/generate-index.mjs` rebuilds `index.json` from the contents of `themes/`.
 - `.github/workflows/validate.yml` is the gate. It runs on pull requests and pushes to `main`, and it fails if a theme is malformed or `index.json` no longer matches `themes/`.
+- `.github/workflows/pr-comment.yml` posts the result of that gate on the pull request.
 
 Clients fetch the raw files directly from `https://raw.githubusercontent.com/Moonfin-Client/Themes/main/`.
