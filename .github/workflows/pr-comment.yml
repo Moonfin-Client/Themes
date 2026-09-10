@@ -26,6 +26,8 @@ jobs:
 
     steps:
       - name: Download validation results
+        id: results
+        continue-on-error: true
         uses: actions/download-artifact@v4
         with:
           name: validate-results
@@ -33,7 +35,11 @@ jobs:
           run-id: ${{ github.event.workflow_run.id }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
+      # A run that produced no artifact leaves nothing to read, which happens when a fork
+      # pull request waits for approval or the build fails before the upload. Neither is
+      # this workflow's doing, so it stops quietly instead of failing the pull request.
       - name: Post PR comment
+        if: steps.results.outcome == 'success'
         uses: actions/github-script@v7
         with:
           script: |
