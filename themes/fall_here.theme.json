@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "exportedByEditorVersion": "2026.05.28",
+  "id": "fall_here",
+  "displayName": "Fall is here",
+  "colors": {
+    "background": "#FF0C1313",
+    "onBackground": "#FFFFDAB8",
+    "surface": "#FF182020",
+    "onSurface": "#FFF59B00",
+    "surfaceVariant": "#FF223535",
+    "scrim": "#FF050B0B",
+    "accent": "#FFCE09BD",
+    "onAccent": "#FFFFFFFF",
+    "buttonNormal": "#FF2A4646",
+    "buttonFocused": "#FFFE892A",
+    "buttonDisabled": "#FF203232",
+    "buttonActive": "#FF385757",
+    "onButtonNormal": "#FFFD8E26",
+    "onButtonFocused": "#FFFFFFFF",
+    "onButtonDisabled": "#FFAFC0C0",
+    "inputBackground": "#FF283E3E",
+    "inputFocused": "#FF384C4C",
+    "inputBorder": "#FF345555",
+    "inputBorderFocused": "#FFEA7439",
+    "rangeTrack": "#FF3B5E5E",
+    "rangeProgress": "#FFEA7439",
+    "rangeThumb": "#FFEA7439",
+    "seekbarBuffered": "#80EFF1F1",
+    "badgeBackground": "#FFEA7439",
+    "onBadge": "#FFF2EFEE",
+    "badgeUnplayed": "#FFEA7439",
+    "badgeWatched": "#FF24C249",
+    "recordingActive": "#FFEB5042",
+    "recordingScheduled": "#FFE4962F"
+  },
+  "borders": {
+    "cardBorder": {
+      "color": "#FFEC7D46",
+      "width": 0
+    },
+    "chipBorder": {
+      "color": "#FFE57238",
+      "width": 1
+    },
+    "focusBorder": {
+      "color": "#FFEA7439",
+      "width": 3
+    },
+    "cardRadius": 11,
+    "chipRadius": 999,
+    "chipBackground": "#FFEE763A",
+    "focusGlow": [
+      {
+        "color": "#94F85E12",
+        "blurRadius": 11,
+        "spreadRadius": 0,
+        "offsetX": 0,
+        "offsetY": 0
+      }
+    ]
+  },
+  "semantic": {
+    "statusAvailable": "#FF2FB631",
+    "statusRequested": "#FFDD48E0",
+    "statusPending": "#FFE7B340",
+    "statusDownloading": "#FF696BE2",
+    "mediaTypeBadgeMovie": "#FF6CA3DA",
+    "mediaTypeBadgeShow": "#FF9A62D5"
+  },
+  "book": {
+    "background": "#FF0F1414",
+    "accent": "#FFEA7439",
+    "mutedText": "#FFAFC0C0",
+    "primaryText": "#FFF4F6F6",
+    "sectionTitle": "#FFF4F6F6",
+    "divider": "#80405959",
+    "placeholder": "#FF293D3D",
+    "shadow": "#B4070D0D",
+    "gradientTop": "#FF212C2C",
+    "gradientBottom": "#FF161D1D",
+    "inactiveChip": "#FF314444",
+    "placeholderPalette": [
+      "#FFEA7439",
+      "#FFDADA2F",
+      "#FF2963D6"
+    ]
+  },
+  "navColorCycle": [
+    "#FFEA7439",
+    "#FFB3EB42"
+  ]
+}
