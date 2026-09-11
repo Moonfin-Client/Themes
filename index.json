@@ -18,6 +18,11 @@
       "file": "themes/greenlu.theme.json"
     },
     {
+      "id": "fall_here",
+      "displayName": "Fall is here",
+      "file": "themes/fall_here.theme.json"
+    },
+    {
       "id": "midnight",
       "displayName": "Midnight",
       "description": "Deep navy dark theme with cyan accents.",
