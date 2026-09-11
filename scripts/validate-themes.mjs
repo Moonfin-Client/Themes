@@ -18,6 +18,10 @@ const REQUIRED_SEMANTIC_KEYS = [
   'statusAvailable', 'statusRequested', 'statusPending', 'statusDownloading',
   'mediaTypeBadgeMovie', 'mediaTypeBadgeShow',
 ];
+// Optional fields the lists above don't cover. A wrong type still breaks theme loading,
+// and the flags go through a hard cast, so they throw rather than fall back to a default.
+const OPTIONAL_COLOR_KEYS = ['error', 'card'];
+const OPTIONAL_FLAG_KEYS = ['transparentNavbarSurface', 'isGlass', 'isPixel'];
 const REQUIRED_BOOK_COLOR_KEYS = [
   'background', 'accent', 'mutedText', 'primaryText', 'sectionTitle', 'divider',
   'placeholder', 'shadow', 'gradientTop', 'gradientBottom', 'inactiveChip',
@@ -41,6 +45,15 @@ function num(owner, key, path, min, max, e) {
 function numVal(v, path, min, max, e) {
   if (!isNum(v)) { e.push(`${path} must be a number`); return; }
   if (v < min || v > max) e.push(`${path} must be between ${min} and ${max}`);
+}
+function optColor(owner, key, path, e) {
+  if (key in owner) colorVal(owner[key], path, e);
+}
+function optBool(owner, key, path, e) {
+  if (key in owner && typeof owner[key] !== 'boolean') e.push(`${path} must be true or false`);
+}
+function optStr(owner, key, path, e) {
+  if (key in owner && typeof owner[key] !== 'string') e.push(`${path} must be a string`);
 }
 function reqObj(owner, key, path, e) {
   if (!isObj(owner) || !(key in owner)) { e.push(`${path} is required`); return null; }
@@ -105,13 +118,22 @@ function validate(t, e) {
 
   const displayName = reqStr(t, 'displayName', 'displayName', e);
   if (hasScript(displayName)) e.push('displayName cannot contain script tags');
+  optStr(t, 'description', 'description', e);
   if (typeof t.description === 'string' && hasScript(t.description)) e.push('description cannot contain script tags');
+  optStr(t, 'fontFamily', 'fontFamily', e);
+  for (const k of OPTIONAL_FLAG_KEYS) optBool(t, k, k, e);
 
   const colors = reqObj(t, 'colors', 'colors', e);
-  if (colors) for (const k of REQUIRED_COLOR_KEYS) color(colors, k, `colors.${k}`, e);
+  if (colors) {
+    for (const k of REQUIRED_COLOR_KEYS) color(colors, k, `colors.${k}`, e);
+    for (const k of OPTIONAL_COLOR_KEYS) optColor(colors, k, `colors.${k}`, e);
+  }
 
   const semantic = reqObj(t, 'semantic', 'semantic', e);
-  if (semantic) for (const k of REQUIRED_SEMANTIC_KEYS) color(semantic, k, `semantic.${k}`, e);
+  if (semantic) {
+    for (const k of REQUIRED_SEMANTIC_KEYS) color(semantic, k, `semantic.${k}`, e);
+    optColor(semantic, 'statusError', 'semantic.statusError', e);
+  }
 
   const book = reqObj(t, 'book', 'book', e);
   if (book) {

@@ -1,0 +1,115 @@
+name: Auto-label pull requests
+
+on:
+  pull_request_target:
+    types: [opened, edited]
+
+permissions:
+  pull-requests: write
+
+concurrency:
+  group: label-pr-${{ github.event.pull_request.number }}
+  cancel-in-progress: false
+
+jobs:
+  label:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Apply type labels
+        uses: actions/github-script@v7
+        with:
+          script: |
+            // Only the Type of Change section is read. Scanning the whole body would
+            // match the option names the template prints beside its unticked boxes,
+            // which would put every label on every pull request.
+
+            const body = context.payload.pull_request.body || '';
+            const number = context.payload.pull_request.number;
+
+            const HEADING = /^\s{0,3}#{1,6}\s+(.*?)\s*#*\s*$/;
+            const CHECKBOX = /^\s*(?:[-*+]\s*)?\[([ xX✓✔☑])\]\s*(.*)$/;
+
+            function section(text, title) {
+              const lines = text.split(/\r?\n/);
+              let start = -1;
+              for (let i = 0; i < lines.length; i++) {
+                const m = lines[i].match(HEADING);
+                if (m && title.test(m[1].trim())) {
+                  start = i + 1;
+                  break;
+                }
+              }
+              if (start === -1) return null;
+              const out = [];
+              for (let i = start; i < lines.length; i++) {
+                if (HEADING.test(lines[i])) break;
+                out.push(lines[i]);
+              }
+              return out;
+            }
+
+            // Anything but a space between the brackets counts as ticked, so the other
+            // mark characters people use are all handled.
+            function ticked(lines) {
+              return lines
+                .map(l => l.match(CHECKBOX))
+                .filter(m => m && m[1] !== ' ')
+                .map(m => m[2].trim());
+            }
+
+            const TYPES = [
+              ['New Theme', /\bNew\s*theme\b/i],
+              ['Theme Update', /\bTheme\s*update\b/i],
+              ['Build', /\bTooling\s*\/\s*CI\b/i],
+              ['documentation', /\bDocumentation\b/i]
+            ];
+
+            const typeLines = section(body, /^type of change\b/i);
+            if (!typeLines) {
+              core.info('No Type of Change section found, leaving labels alone.');
+              return;
+            }
+
+            const wanted = new Set();
+            // "Other" carries whatever the author typed after it, which would otherwise
+            // match the categories by accident.
+            for (const item of ticked(typeLines).filter(i => !/^other\b/i.test(i))) {
+              for (const [label, regex] of TYPES) {
+                if (regex.test(item)) wanted.add(label);
+              }
+            }
+
+            const { data: existing } = await github.rest.issues.listLabelsOnIssue({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: number,
+              per_page: 100
+            });
+            const current = new Set(existing.map(l => l.name));
+
+            const addLabels = [...wanted].filter(l => !current.has(l));
+            const removeLabels = TYPES
+              .map(([label]) => label)
+              .filter(l => current.has(l) && !wanted.has(l));
+
+            if (addLabels.length) {
+              await github.rest.issues.addLabels({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: number,
+                labels: addLabels
+              });
+            }
+
+            for (const label of removeLabels) {
+              try {
+                await github.rest.issues.removeLabel({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: number,
+                  name: label
+                });
+              } catch (e) {
+                if (e.status !== 404) throw e;
+              }
+            }

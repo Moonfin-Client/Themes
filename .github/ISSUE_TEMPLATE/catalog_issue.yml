@@ -1,0 +1,32 @@
+name: Catalog or tooling problem
+description: The validator, the index, or a workflow in this repo is misbehaving
+title: "[Catalog] "
+labels: ["Bug", "Build"]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Theme validator (scripts/validate-themes.mjs)
+        - Index generator (scripts/generate-index.mjs)
+        - GitHub workflow
+        - index.json contents
+        - Something else
+    validations:
+      required: true
+
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: Include the error text or a link to the failing run.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect instead?
+    validations:
+      required: true
