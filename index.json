@@ -14,8 +14,7 @@
     },
     {
       "id": "fall_here",
-      "displayName": "Fall Theme",
-      "description": "A warm fall theme",
+      "displayName": "Fall is here",
       "file": "themes/fall_here.theme.json"
     },
     {
