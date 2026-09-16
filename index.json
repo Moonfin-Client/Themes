@@ -13,6 +13,12 @@
       "file": "themes/darkflix.theme.json"
     },
     {
+      "id": "fall_here",
+      "displayName": "Fall Theme",
+      "description": "A warm fall theme",
+      "file": "themes/fall_here.theme.json"
+    },
+    {
       "id": "greenlu",
       "displayName": "Greenlu",
       "file": "themes/greenlu.theme.json"
