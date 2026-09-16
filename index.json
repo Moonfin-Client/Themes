@@ -13,6 +13,11 @@
       "file": "themes/darkflix.theme.json"
     },
     {
+      "id": "fall_here",
+      "displayName": "Fall is here",
+      "file": "themes/fall_here.theme.json"
+    },
+    {
       "id": "greenlu",
       "displayName": "Greenlu",
       "file": "themes/greenlu.theme.json"
@@ -24,6 +29,12 @@
       "file": "themes/midnight.theme.json"
     },
     {
+      "id": "puppy_brown",
+      "displayName": "Puppy Brown",
+      "description": "Puppy Bown",
+      "file": "themes/puppy_brown.theme.json"
+    },
+    {
       "id": "purplemax",
       "displayName": "Purple Max",
       "file": "themes/purplemax.theme.json"
@@ -33,6 +44,12 @@
       "displayName": "Purplier",
       "description": "A purplier purple, for purpliurs.",
       "file": "themes/purplier.theme.json"
+    },
+    {
+      "id": "red_velvet",
+      "displayName": "Red Velvet Cake",
+      "description": "Red Velvet Cake",
+      "file": "themes/red_velvet.theme.json"
     },
     {
       "id": "redflix",

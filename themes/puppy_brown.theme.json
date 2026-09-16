@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "exportedByEditorVersion": "2026.05.28",
+  "id": "puppy_brown",
+  "displayName": "Puppy Brown",
+  "colors": {
+    "background": "#FF14100D",
+    "onBackground": "#FFFFF3E6",
+    "surface": "#FF241C16",
+    "onSurface": "#FFFFD166",
+    "surfaceVariant": "#FF382C22",
+    "scrim": "#FF080605",
+    "accent": "#FFD48826",
+    "onAccent": "#FFFFFFFF",
+    "buttonNormal": "#FF382C22",
+    "buttonFocused": "#FFFFD166",
+    "buttonDisabled": "#FF1C1510",
+    "buttonActive": "#FF524133",
+    "onButtonNormal": "#FFFFD166",
+    "onButtonFocused": "#FF14100D",
+    "onButtonDisabled": "#FF9E8A78",
+    "inputBackground": "#FF2E231B",
+    "inputFocused": "#FF423528",
+    "inputBorder": "#FF6B523D",
+    "inputBorderFocused": "#FFFFD166",
+    "rangeTrack": "#FF423528",
+    "rangeProgress": "#FFD48826",
+    "rangeThumb": "#FFFFD166",
+    "seekbarBuffered": "#806B523D",
+    "badgeBackground": "#FFD48826",
+    "onBadge": "#FFFFFFFF",
+    "badgeUnplayed": "#FFD48826",
+    "badgeWatched": "#FF2EC45B",
+    "recordingActive": "#FFE65C24",
+    "recordingScheduled": "#FFFFD166"
+  },
+  "borders": {
+    "cardBorder": {
+      "color": "#FF6B523D",
+      "width": 1
+    },
+    "chipBorder": {
+      "color": "#FFFFD166",
+      "width": 1
+    },
+    "focusBorder": {
+      "color": "#FFFFD166",
+      "width": 3
+    },
+    "cardRadius": 11,
+    "chipRadius": 999,
+    "chipBackground": "#FF382C22",
+    "focusGlow": [
+      {
+        "color": "#B4FFD166",
+        "blurRadius": 14,
+        "spreadRadius": 1,
+        "offsetX": 0,
+        "offsetY": 0
+      }
+    ]
+  },
+  "semantic": {
+    "statusAvailable": "#FF2EC45B",
+    "statusRequested": "#FFE65C24",
+    "statusPending": "#FFFFD166",
+    "statusDownloading": "#FF3399FF",
+    "mediaTypeBadgeMovie": "#FF3399FF",
+    "mediaTypeBadgeShow": "#FF9933FF"
+  },
+  "book": {
+    "background": "#FF1A1410",
+    "accent": "#FFD48826",
+    "mutedText": "#FFB8A492",
+    "primaryText": "#FFFFF3E6",
+    "sectionTitle": "#FFFFD166",
+    "divider": "#806B523D",
+    "placeholder": "#FF2E231B",
+    "shadow": "#B4080605",
+    "gradientTop": "#FF382C22",
+    "gradientBottom": "#FF1C1510",
+    "inactiveChip": "#FF382C22",
+    "placeholderPalette": [
+      "#FFD48826",
+      "#FFE65C24",
+      "#FFFFD166"
+    ]
+  },
+  "description": "Puppy Bown",
+  "navColorCycle": [
+    "#FFD48826",
+    "#FFFFD166"
+  ]
+}
