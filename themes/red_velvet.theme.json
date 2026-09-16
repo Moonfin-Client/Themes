@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "exportedByEditorVersion": "2026.05.28",
+  "id": "red_velvet",
+  "displayName": "Red Velvet Cake",
+  "colors": {
+    "background": "#FF140C0F",
+    "onBackground": "#FFFFFFFF",
+    "surface": "#FF24141A",
+    "onSurface": "#FFFFC0CB",
+    "surfaceVariant": "#FF381F28",
+    "scrim": "#FF0A0407",
+    "accent": "#FFFF2442",
+    "onAccent": "#FFFFFFFF",
+    "buttonNormal": "#FF381F28",
+    "buttonFocused": "#FFFFFFFF",
+    "buttonDisabled": "#FF1C1015",
+    "buttonActive": "#FF522C3A",
+    "onButtonNormal": "#FFFFC0CB",
+    "onButtonFocused": "#FF140C0F",
+    "onButtonDisabled": "#FF9E7D8A",
+    "inputBackground": "#FF2E1921",
+    "inputFocused": "#FF42242F",
+    "inputBorder": "#FF6B384A",
+    "inputBorderFocused": "#FFFFFFFF",
+    "rangeTrack": "#FF42242F",
+    "rangeProgress": "#FFFF2442",
+    "rangeThumb": "#FFFFFFFF",
+    "seekbarBuffered": "#806B384A",
+    "badgeBackground": "#FFFF2442",
+    "onBadge": "#FFFFFFFF",
+    "badgeUnplayed": "#FFFF2442",
+    "badgeWatched": "#FF2EE672",
+    "recordingActive": "#FFFF2442",
+    "recordingScheduled": "#FFFFFFFF"
+  },
+  "borders": {
+    "cardBorder": {
+      "color": "#FFFF2442",
+      "width": 0
+    },
+    "chipBorder": {
+      "color": "#FFFFFFFF",
+      "width": 1
+    },
+    "focusBorder": {
+      "color": "#FFFFFFFF",
+      "width": 3
+    },
+    "cardRadius": 11,
+    "chipRadius": 999,
+    "chipBackground": "#FF381F28",
+    "focusGlow": [
+      {
+        "color": "#B4FF2442",
+        "blurRadius": 14,
+        "spreadRadius": 1,
+        "offsetX": 0,
+        "offsetY": 0
+      }
+    ]
+  },
+  "semantic": {
+    "statusAvailable": "#FF2EE672",
+    "statusRequested": "#FFFF2442",
+    "statusPending": "#FFFFC0CB",
+    "statusDownloading": "#FF3399FF",
+    "mediaTypeBadgeMovie": "#FF3399FF",
+    "mediaTypeBadgeShow": "#FFCC66FF"
+  },
+  "book": {
+    "background": "#FF1A0F13",
+    "accent": "#FFFF2442",
+    "mutedText": "#FFB899A4",
+    "primaryText": "#FFFFFFFF",
+    "sectionTitle": "#FFFFC0CB",
+    "divider": "#806B384A",
+    "placeholder": "#FF2E1921",
+    "shadow": "#B40A0407",
+    "gradientTop": "#FF381F28",
+    "gradientBottom": "#FF1C1015",
+    "inactiveChip": "#FF381F28",
+    "placeholderPalette": [
+      "#FFFF2442",
+      "#FFFFFFFF",
+      "#FFFFC0CB"
+    ]
+  },
+  "description": "Red Velvet Cake",
+  "navColorCycle": [
+    "#FFFF2442",
+    "#FFFFFFFF"
+  ]
+}
