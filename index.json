@@ -55,6 +55,12 @@
       "id": "redflix",
       "displayName": "Redflix",
       "file": "themes/redflix.theme.json"
+    },
+    {
+      "id": "wildcard",
+      "displayName": "Wildcard",
+      "description": "The Jokers Are Mad Ha Ha Ha",
+      "file": "themes/wildcard.theme.json"
     }
   ]
 }
