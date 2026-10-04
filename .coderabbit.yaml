@@ -1,0 +1,40 @@
+# yaml-language-server: $schema=https://www.coderabbit.ai/integrations/schema.v2.json
+tone_instructions: >-
+  Most contributors are volunteers. Be direct and friendly, explain why a change
+  matters, and point to the existing code to follow. Use plain American English.
+
+reviews:
+  profile: chill
+  request_changes_workflow: false
+  high_level_summary: true
+  # The summary stays in the walkthrough comment. Writing it into the description
+  # reruns the label workflow, which takes off any of its labels added by hand.
+  high_level_summary_in_walkthrough: true
+  in_progress_fortune: false
+  # label-pr.yml owns the labels.
+  suggested_labels: false
+  auto_review:
+    base_branches:
+      - ".*"
+  finishing_touches:
+    docstrings:
+      enabled: false
+    unit_tests:
+      enabled: false
+  pre_merge_checks:
+    docstrings:
+      mode: "off"
+  path_instructions:
+    - path: "themes/*.theme.json"
+      instructions: |
+        Themes are exported from the Moonfin theme editor and every Moonfin client loads them. The Validate themes check already covers required fields, types and hex colors, so focus on what it can't see.
+        - The file is named `<id>.theme.json`, and the id is unique and only uses lowercase letters, numbers, `_` or `-`.
+        - Check readability. Text and icon colors need enough contrast against the backgrounds and surfaces they sit on, including focused and selected states, since people read these from across a room on a TV.
+        - A pull request should only add or change its own theme. Ask about edits to other people's themes.
+        - index.json has to be regenerated in the same pull request with `node scripts/generate-index.mjs`.
+    - path: "scripts/**"
+      instructions: |
+        validate-themes.mjs is kept in step with the clients' own theme parsers. A new required field or a stricter rule here needs the matching change in the clients, or valid themes stop loading there.
+
+chat:
+  art: false
