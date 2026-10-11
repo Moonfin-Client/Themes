@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "exportedByEditorVersion": "2026.05.28",
+  "id": "wildcard",
+  "displayName": "Wildcard",
+  "colors": {
+    "background": "#FF0F1A19",
+    "onBackground": "#FFD2FFC2",
+    "surface": "#FF182A21",
+    "onSurface": "#FFFFFFFF",
+    "surfaceVariant": "#FF1D3429",
+    "scrim": "#C8000000",
+    "accent": "#FFEE2FEB",
+    "onAccent": "#FFF2EEF1",
+    "buttonNormal": "#FF2A3731",
+    "buttonFocused": "#FFEE2FEB",
+    "buttonDisabled": "#FF18251F",
+    "buttonActive": "#FF315443",
+    "onButtonNormal": "#FFECEEED",
+    "onButtonFocused": "#FFF2EEF1",
+    "onButtonDisabled": "#FF9BA6A1",
+    "inputBackground": "#FF2B4F3E",
+    "inputFocused": "#FF364A40",
+    "inputBorder": "#FF406452",
+    "inputBorderFocused": "#FFEE2FEB",
+    "rangeTrack": "#FF376750",
+    "rangeProgress": "#FFEE2FEB",
+    "rangeThumb": "#FFEE2FEB",
+    "seekbarBuffered": "#443EFF1F",
+    "badgeBackground": "#FFEE2FEB",
+    "onBadge": "#FFF2EEF1",
+    "badgeUnplayed": "#FFEE2FEB",
+    "badgeWatched": "#FF00FF33",
+    "recordingActive": "#FFEC22E5",
+    "recordingScheduled": "#AF63F27B"
+  },
+  "borders": {
+    "cardBorder": {
+      "color": "#AEEB47E8",
+      "width": 3
+    },
+    "chipBorder": {
+      "color": "#CDE335E1",
+      "width": 1
+    },
+    "focusBorder": {
+      "color": "#FFEE2FEB",
+      "width": 4
+    },
+    "cardRadius": 20,
+    "chipRadius": 20,
+    "chipBackground": "#78F71DF3",
+    "focusGlow": [
+      {
+        "color": "#FF2EFF31",
+        "blurRadius": 5,
+        "spreadRadius": 2.5,
+        "offsetX": 0,
+        "offsetY": 0
+      }
+    ]
+  },
+  "semantic": {
+    "statusAvailable": "#FF28CC78",
+    "statusRequested": "#FFB651E1",
+    "statusPending": "#FFE83BE2",
+    "statusDownloading": "#FF6D5B05",
+    "mediaTypeBadgeMovie": "#FF5E7FE4",
+    "mediaTypeBadgeShow": "#FFA55CE6"
+  },
+  "book": {
+    "background": "#FF151E1A",
+    "accent": "#FFEE2FEB",
+    "mutedText": "#FF9BA6A1",
+    "primaryText": "#FFECEEED",
+    "sectionTitle": "#FFECEEED",
+    "divider": "#8040594D",
+    "placeholder": "#FFEE2FEB",
+    "shadow": "#B407000A",
+    "gradientTop": "#FF25372E",
+    "gradientBottom": "#FF151E1A",
+    "inactiveChip": "#FF2C4439",
+    "placeholderPalette": [
+      "#FFEE2FEB",
+      "#FF0A2F65",
+      "#FF29D665"
+    ]
+  },
+  "description": "The Jokers Are Mad Ha Ha Ha",
+  "textGlow": [
+    {
+      "color": "#C900FFFB",
+      "blurRadius": 8,
+      "spreadRadius": 0,
+      "offsetX": 0,
+      "offsetY": 0
+    }
+  ],
+  "navColorCycle": [
+    "#FFEE2FEB",
+    "#FF00FF04"
+  ]
+}
