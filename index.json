@@ -13,6 +13,12 @@
       "file": "themes/darkflix.theme.json"
     },
     {
+      "id": "dracula",
+      "displayName": "Dracula",
+      "description": "Dracula theme for Moonfin",
+      "file": "themes/dracula.theme.json"
+    },
+    {
       "id": "fall_here",
       "displayName": "Fall is here",
       "file": "themes/fall_here.theme.json"

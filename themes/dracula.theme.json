@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "exportedByEditorVersion": "2026.05.28",
+  "id": "dracula",
+  "displayName": "Dracula",
+  "colors": {
+    "background": "#FF282A36",
+    "onBackground": "#FFF8F8F2",
+    "surface": "#FF21222C",
+    "onSurface": "#FFF8F8F2",
+    "surfaceVariant": "#FF44475A",
+    "scrim": "#CC000000",
+    "accent": "#FFBD93F9",
+    "onAccent": "#FF282A36",
+    "buttonNormal": "#FF44475A",
+    "buttonFocused": "#FFBD93F9",
+    "buttonDisabled": "#FF44475A",
+    "buttonActive": "#FFFF79C6",
+    "onButtonNormal": "#FFF8F8F2",
+    "onButtonFocused": "#FF282A36",
+    "onButtonDisabled": "#FF6272A4",
+    "inputBackground": "#FF44475A",
+    "inputFocused": "#FF44475A",
+    "inputBorder": "#FF6272A4",
+    "inputBorderFocused": "#FFBD93F9",
+    "rangeTrack": "#FF44475A",
+    "rangeProgress": "#FFBD93F9",
+    "rangeThumb": "#FFFF79C6",
+    "seekbarBuffered": "#806272A4",
+    "badgeBackground": "#FF8BE9FD",
+    "onBadge": "#FF282A36",
+    "badgeUnplayed": "#FFBD93F9",
+    "badgeWatched": "#FF50FA7B",
+    "recordingActive": "#FFFF5555",
+    "recordingScheduled": "#FFFFB86C"
+  },
+  "borders": {
+    "cardBorder": {
+      "color": "#006272A4",
+      "width": 1
+    },
+    "chipBorder": {
+      "color": "#556272A4",
+      "width": 1
+    },
+    "focusBorder": {
+      "color": "#FFBD93F9",
+      "width": 3
+    },
+    "cardRadius": 8,
+    "chipRadius": 999,
+    "chipBackground": "#1F44475A",
+    "focusGlow": [
+      {
+        "color": "#74BD93F9",
+        "blurRadius": 10,
+        "spreadRadius": 1,
+        "offsetX": 0,
+        "offsetY": 0
+      }
+    ]
+  },
+  "semantic": {
+    "statusAvailable": "#FF50FA7B",
+    "statusRequested": "#FFBD93F9",
+    "statusPending": "#FFF1FA8C",
+    "statusDownloading": "#FF8BE9FD",
+    "mediaTypeBadgeMovie": "#FFFF79C6",
+    "mediaTypeBadgeShow": "#FFBD93F9"
+  },
+  "book": {
+    "background": "#FF282A36",
+    "accent": "#FFBD93F9",
+    "mutedText": "#FF6272A4",
+    "primaryText": "#FFF8F8F2",
+    "sectionTitle": "#FFFFB86C",
+    "divider": "#3F6272A4",
+    "placeholder": "#FF44475A",
+    "shadow": "#58000000",
+    "gradientTop": "#FF282A36",
+    "gradientBottom": "#FF21222C",
+    "inactiveChip": "#586272A4",
+    "placeholderPalette": [
+      "#FFBD93F9",
+      "#FFFF79C6",
+      "#FF8BE9FD",
+      "#FF50FA7B",
+      "#FFFFB86C",
+      "#FFFF5555",
+      "#FFF1FA8C",
+      "#FF6272A4",
+      "#FF44475A",
+      "#FFBD93F9"
+    ]
+  },
+  "description": "Dracula theme for Moonfin",
+  "navColorCycle": [
+    "#FFBD93F9",
+    "#FFFF79C6",
+    "#FF8BE9FD",
+    "#FF50FA7B",
+    "#FFFFB86C",
+    "#FFF1FA8C"
+  ]
+}
