@@ -55,6 +55,12 @@
       "id": "redflix",
       "displayName": "Redflix",
       "file": "themes/redflix.theme.json"
+    },
+    {
+      "id": "rosepine",
+      "displayName": "Rosé Pine",
+      "description": "All natural pine, faux fur and a bit of soho vibes for the classy minimalist.",
+      "file": "themes/rosepine.theme.json"
     }
   ]
 }
