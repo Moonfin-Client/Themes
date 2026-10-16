@@ -63,6 +63,18 @@
       "file": "themes/redflix.theme.json"
     },
     {
+      "id": "rosepine",
+      "displayName": "Rosé Pine",
+      "description": "All natural pine, faux fur and a bit of soho vibes for the classy minimalist.",
+      "file": "themes/rosepine.theme.json"
+    },
+    {
+      "id": "rosepine-dawn",
+      "displayName": "Rosé Pine Dawn",
+      "description": "All natural pine, faux fur and a bit of soho vibes for the classy minimalist. (Light Variant)",
+      "file": "themes/rosepine-dawn.theme.json"
+    },
+    {
       "id": "wildcard",
       "displayName": "Wildcard",
       "description": "The Jokers Are Mad Ha Ha Ha",
