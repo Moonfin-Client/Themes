@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "exportedByEditorVersion": "2026.05.28",
+  "id": "pinkmoon",
+  "displayName": "Once in a pink moon",
+  "colors": {
+    "background": "#FF000000",
+    "onBackground": "#FFFFFFFF",
+    "surface": "#FF1A1A1A",
+    "onSurface": "#FFFFFFFF",
+    "surfaceVariant": "#FF252525",
+    "scrim": "#CC000000",
+    "accent": "#FFFE69A9",
+    "onAccent": "#FFFFFFFF",
+    "buttonNormal": "#FF2A2A2A",
+    "buttonFocused": "#FFFE69A9",
+    "buttonDisabled": "#FF1E1E1E",
+    "buttonActive": "#FF3A3A3A",
+    "onButtonNormal": "#FFFFFFFF",
+    "onButtonFocused": "#FFFFFFFF",
+    "onButtonDisabled": "#FF666666",
+    "inputBackground": "#FF2A2A2A",
+    "inputFocused": "#FF3A3A3A",
+    "inputBorder": "#FF404040",
+    "inputBorderFocused": "#FFFE69A9",
+    "rangeTrack": "#FF000000",
+    "rangeProgress": "#FFFE69A9",
+    "rangeThumb": "#FFFE69A9",
+    "seekbarBuffered": "#80FFFFFF",
+    "badgeBackground": "#FFFE69A9",
+    "onBadge": "#FFFFFFFF",
+    "badgeUnplayed": "#FFFE69A9",
+    "badgeWatched": "#80FE69A9",
+    "recordingActive": "#FFEF4444",
+    "recordingScheduled": "#FFFF9800"
+  },
+  "borders": {
+    "cardBorder": {
+      "color": "#00000000",
+      "width": 1
+    },
+    "chipBorder": {
+      "color": "#55FE69A9",
+      "width": 1
+    },
+    "focusBorder": {
+      "color": "#FFFE69A9",
+      "width": 2
+    },
+    "cardRadius": 8,
+    "chipRadius": 999,
+    "chipBackground": "#1FFE69A9",
+    "focusGlow": []
+  },
+  "semantic": {
+    "statusAvailable": "#FF22C55E",
+    "statusRequested": "#FF9333EA",
+    "statusPending": "#FFEAB308",
+    "statusDownloading": "#FF6366F1",
+    "mediaTypeBadgeMovie": "#FF3B82F6",
+    "mediaTypeBadgeShow": "#FF8B5CF6"
+  },
+  "book": {
+    "background": "#FF000000",
+    "accent": "#FFFE69A9",
+    "mutedText": "#FFB0B0B0",
+    "primaryText": "#FFFFFFFF",
+    "sectionTitle": "#FFFFE6C3",
+    "divider": "#22FFFFFF",
+    "placeholder": "#FF2A2A2A",
+    "shadow": "#24000000",
+    "gradientTop": "#FF141414",
+    "gradientBottom": "#FF000000",
+    "inactiveChip": "#33FE69A9",
+    "placeholderPalette": [
+      "#FF1A5C9A",
+      "#FF2E7D32",
+      "#FF6A1B9A",
+      "#FF00695C",
+      "#FFC62828",
+      "#FF4527A0",
+      "#FF558B2F",
+      "#FF283593",
+      "#FF4E342E",
+      "#FF00838F"
+    ]
+  },
+  "description": "Default moonfin theme but for OLED screens with true black background and electric pink accents"
+}

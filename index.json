@@ -35,6 +35,12 @@
       "file": "themes/midnight.theme.json"
     },
     {
+      "id": "pinkmoon",
+      "displayName": "Once in a pink moon",
+      "description": "Default moonfin theme but for OLED screens with true black background and electric pink accents",
+      "file": "themes/pinkmoon.theme.json"
+    },
+    {
       "id": "puppy_brown",
       "displayName": "Puppy Brown",
       "description": "Puppy Bown",
