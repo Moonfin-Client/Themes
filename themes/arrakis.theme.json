@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "id": "arrakis",
+  "displayName": "Arrakis",
+  "description": "Desert dusk: deep indigo night, ember dunes and spice-amber accents.",
+  "colors": {
+    "background": "#FF150B10",
+    "onBackground": "#FFFFE2B8",
+    "surface": "#FF140E22",
+    "onSurface": "#FFFFE2B8",
+    "surfaceVariant": "#FF2A1A30",
+    "scrim": "#CC1F0F12",
+    "accent": "#FFF0A050",
+    "onAccent": "#FF0A0712",
+    "buttonNormal": "#FF241828",
+    "buttonFocused": "#FFF0A050",
+    "buttonDisabled": "#FF1A1220",
+    "buttonActive": "#FFC0603A",
+    "onButtonNormal": "#FFFFE2B8",
+    "onButtonFocused": "#FF0A0712",
+    "onButtonDisabled": "#FF7A6458",
+    "inputBackground": "#FF1A1220",
+    "inputFocused": "#FF2A1A30",
+    "inputBorder": "#2EFFE2B8",
+    "inputBorderFocused": "#FFF0A050",
+    "rangeTrack": "#FF3D1F26",
+    "rangeProgress": "#FFF0A050",
+    "rangeThumb": "#FFFFD38A",
+    "seekbarBuffered": "#80B8653F",
+    "badgeBackground": "#FFC0603A",
+    "onBadge": "#FFFFE2B8",
+    "badgeUnplayed": "#FFF0A050",
+    "badgeWatched": "#FF8FA876",
+    "recordingActive": "#FFE0483A",
+    "recordingScheduled": "#FFFFC27A",
+    "error": "#FFE0483A",
+    "card": "#FF140E22"
+  },
+  "borders": {
+    "cardBorder": {
+      "color": "#2EFFE2B8",
+      "width": 1
+    },
+    "chipBorder": {
+      "color": "#40FFE2B8",
+      "width": 1
+    },
+    "focusBorder": {
+      "color": "#FFF0A050",
+      "width": 3
+    },
+    "cardRadius": 10,
+    "chipRadius": 6,
+    "chipBackground": "#1FF0A050",
+    "focusGlow": [
+      {
+        "color": "#73F0A050",
+        "blurRadius": 18,
+        "spreadRadius": 1,
+        "offsetX": 0,
+        "offsetY": 4
+      }
+    ]
+  },
+  "semantic": {
+    "statusAvailable": "#FF8FA876",
+    "statusRequested": "#FFF0A050",
+    "statusPending": "#FFFFC27A",
+    "statusDownloading": "#FF6E8FC0",
+    "statusError": "#FFE0483A",
+    "mediaTypeBadgeMovie": "#FFC0603A",
+    "mediaTypeBadgeShow": "#FF5A2A3E"
+  },
+  "book": {
+    "background": "#FF0A0712",
+    "accent": "#FFF0A050",
+    "mutedText": "#FF9C8270",
+    "primaryText": "#FFFFE2B8",
+    "sectionTitle": "#FFF0A050",
+    "divider": "#2EFFE2B8",
+    "placeholder": "#FF2A1A30",
+    "shadow": "#73000000",
+    "gradientTop": "#FF1C1438",
+    "gradientBottom": "#FF0A0712",
+    "inactiveChip": "#40FFE2B8",
+    "placeholderPalette": [
+      "#FFF0A050",
+      "#FFC0603A",
+      "#FFD98A52",
+      "#FFB8653F",
+      "#FF7D3F33",
+      "#FF5A2A3E",
+      "#FF1C1438",
+      "#FFE9D2B0"
+    ]
+  },
+  "textGlow": [
+    {
+      "color": "#99000000",
+      "blurRadius": 12,
+      "offsetX": 0,
+      "offsetY": 2
+    }
+  ],
+  "navColorCycle": [
+    "#FFF0A050",
+    "#FFFFC27A",
+    "#FFD98A52",
+    "#FFC0603A",
+    "#FFE9D2B0"
+  ]
+}
