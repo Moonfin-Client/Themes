@@ -2,6 +2,12 @@
   "schemaVersion": 1,
   "themes": [
     {
+      "id": "arrakis",
+      "displayName": "Arrakis",
+      "description": "Desert dusk: deep indigo night, ember dunes and spice-amber accents.",
+      "file": "themes/arrakis.theme.json"
+    },
+    {
       "id": "bluesneyplus",
       "displayName": "BluesneyPlus",
       "file": "themes/bluesneyplus.theme.json"
