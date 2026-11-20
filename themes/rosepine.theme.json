@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "exportedByEditorVersion": "2026.05.28",
+  "id": "rosepine",
+  "displayName": "Rosé Pine",
+  "colors": {
+    "background": "#FF191724",
+    "onBackground": "#FFE0DEF4",
+    "surface": "#FF1F1D2E",
+    "onSurface": "#FF908CAA",
+    "surfaceVariant": "#FF2A273F",
+    "scrim": "#FF26233A",
+    "accent": "#FF31748F",
+    "onAccent": "#FFEBBCBA",
+    "buttonNormal": "#33908CAA",
+    "buttonFocused": "#FF31748F",
+    "buttonDisabled": "#FF6E6A86",
+    "buttonActive": "#FF908CAA",
+    "onButtonNormal": "#FFE0DEF4",
+    "onButtonFocused": "#FFEBBCBA",
+    "onButtonDisabled": "#FF6E6A86",
+    "inputBackground": "#FF1F1D2E",
+    "inputFocused": "#FF26233A",
+    "inputBorder": "#FF26233A",
+    "inputBorderFocused": "#FF31748F",
+    "rangeTrack": "#FF26233A",
+    "rangeProgress": "#FF31748F",
+    "rangeThumb": "#FF31748F",
+    "seekbarBuffered": "#80524F67",
+    "badgeBackground": "#FF31748F",
+    "onBadge": "#FFE0DEF4",
+    "badgeUnplayed": "#FF31748F",
+    "badgeWatched": "#FFC4A7E7",
+    "recordingActive": "#FFEB6F92",
+    "recordingScheduled": "#FFF6C177"
+  },
+  "borders": {
+    "cardBorder": {
+      "color": "#00000000",
+      "width": 1
+    },
+    "chipBorder": {
+      "color": "#558EC8F0",
+      "width": 1
+    },
+    "focusBorder": {
+      "color": "#FF31748F",
+      "width": 2
+    },
+    "cardRadius": 8,
+    "chipRadius": 999,
+    "chipBackground": "#1F8EC8F0",
+    "focusGlow": []
+  },
+  "semantic": {
+    "statusAvailable": "#FF31748F",
+    "statusRequested": "#FFF6C177",
+    "statusPending": "#FFEB6F92",
+    "statusDownloading": "#FFEBBCBA",
+    "mediaTypeBadgeMovie": "#FF9CCFD8",
+    "mediaTypeBadgeShow": "#FFC4A7E7"
+  },
+  "book": {
+    "background": "#FF0F182A",
+    "accent": "#FF31748F",
+    "mutedText": "#FF3784A2",
+    "primaryText": "#FF9CCFD8",
+    "sectionTitle": "#FFF6C177",
+    "divider": "#223E5F82",
+    "placeholder": "#FF31748F",
+    "shadow": "#24000000",
+    "gradientTop": "#FF245569",
+    "gradientBottom": "#FF0B1424",
+    "inactiveChip": "#556388A8",
+    "placeholderPalette": [
+      "#FF31748F",
+      "#FFEB6F92",
+      "#FFF6C177",
+      "#FFEBBCBA",
+      "#FFC4A7E7",
+      "#FF9CCFD8"
+    ]
+  },
+  "description": "All natural pine, faux fur and a bit of soho vibes for the classy minimalist."
+}
